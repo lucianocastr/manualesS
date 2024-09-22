@@ -1,0 +1,53 @@
+- title: Introducción
+  icon: event_note
+  url: manuales/en/editor-etiquetas/introduccion/
+
+- title: Presentación
+  icon: qr_code_2 
+  url: manuales/en/editor-etiquetas/presentacion/
+
+- title: ABM Etiquetas
+  icon: edit
+
+- title: Alta
+  icon:
+  url: manuales/en/editor-etiquetas/alta/
+
+- title: Baja
+  icon:
+  url: manuales/en/editor-etiquetas/baja/
+
+- title: Modificación
+  icon:
+  url: manuales/en/editor-etiquetas/modificacion/
+
+- title: Configuraciones
+  icon: settings
+  url: manuales/en/editor-etiquetas/configuraciones/
+
+- title: Barra componentes
+  icon: category
+
+- title: Generales
+  icon: 
+  url: manuales/en/editor-etiquetas/generales/
+
+- title: Texto
+  icon: 
+  url: manuales/en/editor-etiquetas/texto/
+
+- title: Tabla Nutricional
+  icon: 
+  url: manuales/en/editor-etiquetas/tabla-nutricional/
+
+- title: Etiquetado frontal
+  icon: 
+  url: manuales/en/editor-etiquetas/etiquetado-frontal/
+
+- title: Código de Barras
+  icon: 
+  url: manuales/en/editor-etiquetas/codigo-barras/
+
+- title: Formatos de etiquetas
+  icon: dashboard
+  url: manuales/en/editor-etiquetas/formato-etiquetas/

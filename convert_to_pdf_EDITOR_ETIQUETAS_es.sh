@@ -1,0 +1,5 @@
+#!/bin/sh
+
+OUTPUT_FILE_ES=./PDFs-Generados/Editor-Etiquetas/ES/editor-etiquetas-es.pdf
+
+wkhtmltopdf --load-error-handling ignore --disable-internal-links --lowquality --javascript-delay 3000 --footer-center [page] toc --disable-toc-links --toc-header-text "Contenidos" page 127.0.0.1:4000/manuales/es/editor-etiquetas/introduccion/index.html page 127.0.0.1:4000/manuales/es/editor-etiquetas/presentacion/index.html page 127.0.0.1:4000/manuales/es/editor-etiquetas/alta/index.html page 127.0.0.1:4000/manuales/es/editor-etiquetas/baja/index.html page 127.0.0.1:4000/manuales/es/editor-etiquetas/modificacion/index.html page 127.0.0.1:4000/manuales/es/editor-etiquetas/configuraciones/index.html page 127.0.0.1:4000/manuales/es/editor-etiquetas/generales/index.html page 127.0.0.1:4000/manuales/es/editor-etiquetas/texto/index.html page 127.0.0.1:4000/manuales/es/editor-etiquetas/tabla-nutricional/index.html page 127.0.0.1:4000/manuales/es/editor-etiquetas/etiquetado-frontal/index.html page 127.0.0.1:4000/manuales/es/editor-etiquetas/codigo-barras/index.html page 127.0.0.1:4000/manuales/es/editor-etiquetas/formato-etiquetas/index.html $OUTPUT_FILE_ES

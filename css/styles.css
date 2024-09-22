@@ -1,0 +1,44 @@
+.icono{
+    float: right;
+    font-size: 16;
+}
+
+#submenu ul{
+    list-style-type: none;
+}
+
+#submenu ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+#submenu li a{
+    text-decoration: none;
+    padding: 8px;
+    font-size: 20px;
+    display: block;
+    color: #757575;
+    opacity: .87;
+}
+
+#submenu li a:hover{
+    text-decoration: none;
+    background: #F8F8F8;
+}
+
+.submenu{
+    display: none;
+}
+
+.opcion{
+    cursor:pointer;
+}
+
+
+
+/*----------------JS-------------*/
+
+.activo{
+    display: block;
+}
+
+

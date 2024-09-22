@@ -1,0 +1,125 @@
+- title: Introducción
+  icon: event_note
+  url: manuales/es/gbs/introducción/
+
+- title: Configuración
+  icon: settings
+
+- title: Configuración General
+  icon: 
+  url: manuales/es/gbs/configuracion-general/
+
+- title: Perfiles de uso
+  icon: 
+  url: manuales/es/gbs/perfiles/
+
+- title: Formatos de impresión
+  icon: 
+  url: manuales/es/gbs/formatos-impresion/
+
+- title: Códigos de barras
+  icon: 
+  url: manuales/es/gbs/codigos-barras/
+
+- title: Back up
+  icon: 
+  url: manuales/es/gbs/backup/
+
+- title: Productos
+  icon: format_list_bulleted
+
+- title: Productos
+  icon: 
+  url: manuales/es/gbs/productos/
+
+- title: Carga ágil de productos
+  icon: 
+  url: manuales/es/gbs/carga-agil/
+
+- title: Accesos directos
+  icon: 
+  url: manuales/es/gbs/accesos-directos/
+
+- title: Departamentos - Grupos
+  icon: 
+  url: manuales/es/gbs/departamentos-grupos/
+
+- title: Ingredientes - Datos de conservacion - IVA
+  icon: 
+  url: manuales/es/gbs/ingredientes/
+
+- title: Importador
+  icon: download
+
+- title: Exportar PLUs TN Ley Nº 27642
+  icon: 
+  url: manuales/es/gbs/exportar-27642/
+
+- title: Exportar PLUs - TN Res. GMC 46/033 - 47/034
+  icon: 
+  url: manuales/es/gbs/exportar-46033/
+
+- title: Precios
+  icon: price_check
+
+- title: Listas de precios
+  icon: 
+  url: manuales/es/gbs/listas-precios/
+
+- title: Modificación rápida
+  icon:
+  url: manuales/es/gbs/modificacion-precios/
+
+- title: Publicidades
+  icon: ads_click
+  url: manuales/es/gbs/publicidades/
+
+- title: Usuarios
+  icon: manage_accounts
+  url: manuales/es/gbs/usuarios/
+
+- title: Ubicaciones
+  icon: add_location_alt
+
+- title: Monedas
+  icon: 
+  url: manuales/es/gbs/monedas/
+
+- title: Países
+  icon: 
+  url: manuales/es/gbs/paises/
+
+- title: Reportes
+  icon: summarize
+
+- title: Ventas por día
+  icon: 
+  url: manuales/es/gbs/ventas-dia/
+
+- title: Ventas por vendedor
+  icon: 
+  url: manuales/es/gbs/ventas-vendedor/
+
+- title: Ventas por PLU
+  icon: 
+  url: manuales/es/gbs/ventas-plu/
+
+- title: Cierre de ventas
+  icon: 
+  url: manuales/es/gbs/cierre-ventas/
+
+- title: Reporte completo
+  icon: 
+  url: manuales/es/gbs/reporte-completo/
+
+- title: Imágenes
+  icon: image
+  url: manuales/es/gbs/imagenes/
+
+- title: Roles web
+  icon: group
+  url: manuales/es/gbs/roles-web/
+
+- title: Systel
+  icon: language
+  url: manuales/es/gbs/systel/

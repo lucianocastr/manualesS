@@ -1,0 +1,37 @@
+- title: Introducción
+  icon: event_note
+  url: manuales/es/sincronizador/introduccion/
+
+- title: Presentación
+  icon: face
+  url: manuales/es/sincronizador/presentacion/
+
+- title: Configuración
+  icon: settings
+
+- title: Presentación
+  icon: 
+  url: manuales/es/sincronizador/equipo/
+
+- title: Planificación
+  icon: 
+  url: manuales/es/sincronizador/planificacion/
+
+- title: Preferencias
+  icon: 
+  url: manuales/es/sincronizador/preferencias/
+
+- title: Preferencias
+  icon: 
+  url: manuales/es/sincronizador/configuracion-antes-sincronizar/
+
+- title: Herramientas
+  icon: 
+  url: manuales/es/sincronizador/herramientas/
+
+- title: Sincronización
+  icon: sync
+  url: manuales/es/sincronizador/sincronizacion/
+
+
+

@@ -1,0 +1,34 @@
+- title: Introducción
+  icon: event_note
+  url: manuales/en/importador/presentacion/
+
+- title: Configuración
+  icon: settings
+
+- title: General
+  icon:
+  url: manuales/en/importador/general/
+
+- title: Datos de importación
+  icon:
+  url: manuales/en/importador/datos-de-importacion/
+
+- title: Temportizador
+  icon:
+  url: manuales/en/importador/temporizador/
+
+- title: Mensajes
+  icon:
+  url: manuales/en/importador/mensajes/
+
+- title: Qendra
+  icon:
+  url: manuales/en/importador/qendra/
+
+- title: Importación
+  icon: system_update_alt
+  url: manuales/en/importador/importacion/
+
+- title: Proceso de importación
+  icon: update
+  url: manuales/en/importador/proceso-de-importacion/
