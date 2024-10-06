@@ -101,12 +101,15 @@ Repita a operação quantas vezes for necessário.
 {: .item-step  .mdl-cell--12-col} 
 Selecione o produto.
 
-{: .item-step  .mdl-cell--12-col} 
-Automaticamente será emitida a etiqueta.
+{: .item-step .mdl-cell--12-col} 
 
-{: .item-step  .mdl-cell--12-col} 
-Para imprimir mais etiquetas, pressione a tecla <i class="systel-tecla-30 bg-2"></i> quantas vezes seja necessário ou selecione um novo produto.
+Pressione a tecla <i class="systel-tecla-30 bg-2"></i>
 
+{:.img-capture}
+![Venda de pré-embalagem unitária de PLU](../../../../images/es/cuora-2/cuora-neo-ventaetiqueta2.png "Venda de pré-embalagem unitária de PLU")
+
+{: .item-step .mdl-cell--12-col} 
+Deve indicar o número de etiquetas que pretende imprimir (Máximo 10). Em seguida, pressione a tecla <i class="systel-tecla-30 bg-2"></i>
 {: .alert-message .note}
 ATENÇÃO: No modo de **pré-empacotamento** somente é possível a impressão de etiquetas.
 

@@ -192,6 +192,13 @@ En el cuadro derecho visualizará el detalle de las publicidades creadas con ant
 IMPORTANTE: En [Programación - ABM - apartado Publicidades](../altas-bajas-modificaciones/index.html#publicidades "Menú - ABM - apartado Publicidades") encontrará los pasos a seguir para crear, editar o eliminar un mensaje publicitario en la balanza.
 
 {: .item-step  .mdl-cell--12-col} 
+En el campo **IVA** puede ejecutar las siguientes acciones según su necesidad:      
+- presionando la **lupa** aparece el menú de búsqueda    
+En el cuadro derecho visualizará el detalle de las tasas porcentuales creadas con anterioridad o podrá ampliar la búsqueda por palabra clave    
+- El **símbolo +** le permite acceder a las tasas ya existentes para realizar alguna modificación    
+- El **símbolo X** le permite eliminar de la pantalla la tasa seleccionado para volver a realizar la acción
+
+{: .item-step  .mdl-cell--12-col} 
 Para colocar un número de lote al PLU presione el campo correspondiente para habilitarlo. Puede utilizar el teclado numérico del equipo o activar el alfanumérico presionando la tecla <span class="systel-tecla-11"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span></span>
 
 {: .img-capture}
@@ -207,6 +214,48 @@ Si el PLU a crear corresponde a un producto Congelado se visualiza además el ca
 
 {: .alert-message .nota}
 No disponible en Argentina
+
+{: .item-step  .mdl-cell--12-col} 
+El campo **Descuento** permite asignar diferentes precios de acuerdo a rangos de cantidades vendidas del producto, tanto para PLUs pesables como unitarios. Para acceder a esta funcionalidad es necesario haber guardado previamente los datos básicos.
+
+{: .item-step  .mdl-cell--12-col} 
+Pulse **+** para configurar.
+
+{: .img-capture}
+![PLU Descuentos](../../../../images/es/cuora-neo/cuora-neo-descuentos1.png "PLU Descuentos")
+
+{: .item-step  .mdl-cell--12-col} 
+Seleccione **NUEVO** para crear una nueva regla de precio de acuerdo a la cantidad que se vende.
+
+{: .img-capture}
+![Descuento Nuevo](../../../../images/es/cuora-neo/cuora-neo-descuentos2.png "Descuento Nuevo")
+
+{: .item-step  .mdl-cell--12-col} 
+Seleccione **Activo** para disponer del descuento
+
+{: .img-capture}
+![Descuento configuración](../../../../images/es/cuora-neo/cuora-neo-descuentos3.png "Descuento configuración")
+
+{: .item-step  .mdl-cell--12-col} 
+En campo **Hasta** indique el peso (para PLU pesable) o cantidad (para PLU unitario) límite máximo que aplicará el precio descuento.
+
+{: .item-step  .mdl-cell--12-col} 
+En campo **Precio** indique el precio que debe asignarse al PLU cuando la venta cumpla con lo determinado en el campo hasta.
+
+{: .item-step  .mdl-cell--12-col} 
+Pulse **GUARDAR** para finalizar con la creacin del descuento.
+
+{: .item-step  .mdl-cell--12-col} 
+Repita las veces que lo requiera.
+
+{: .item-step  .mdl-cell--12-col} 
+Al salir, visualizará los descuentos creados.
+
+{: .img-capture}
+![Descuentos](../../../../images/es/cuora-neo/cuora-neo-descuentos4.png "Descuentos")
+
+{: .item-step  .mdl-cell--12-col} 
+Para eliminar los descuento presiones **X** en el campo descuentos
 
 {: .item-step  .mdl-cell--12-col} 
 Presione Guardar 
@@ -281,6 +330,8 @@ Dentro de la  línea de **Formatos de Impresión**, se encuentran dos posibilida
 {: .img-capture}
 ![PLU Formatos de Impresión](../../../../images/es/cuora-neo/cuora-neo-abm-plu13.png "PLU Formatos de Impresión")   
 
+- **Venta Directa:** Permite asignar al PLU un formato de impresión específico al realizar venta directa.
+- **Pre-empaque:** Permite asignar al PLU un formato de impresión específico al realizar venta Pre-empaque.
 
 - presionando la **lupa** se visualiza el menú de búsqueda. En el cuadro derecho visualiza los modos de venta ya generados. Elija el que corresponde al PLU a crear y luego presione seleccionar. Recuerde que puede ampliar la exploración utilizando la opción de búsqueda por palabra clave
 - El **símbolo X** le permite eliminar de la pantalla el formato de impresión seleccionado
@@ -312,6 +363,9 @@ Continuamos con la cuarta solapa **Cód. barras**.
 
 {: .item-step  .mdl-cell--12-col}   
 Para activar o desactivar las funciones disponibles en este módulo del menú debe presionar sobre los cuadros grisados. Al hacerlo desaparece el cuadro y se visualiza un tilde.
+
+- Seleccione la opción Reemplazar PLU por el número para asignar un valor distinto al número de PLU en la conformación del código de barras..
+- Seleccione UPC / Código de barras fijo e ingrese un valor que será asignado como codigo de barras fijo del PLU.
 
 {: .item-step  .mdl-cell--12-col}  
 En la línea **Reemplazar PLU por el número** puede  utilizar las flechas ubicadas en los extremos del recuadro o ingresar el número a través del teclado numérico. 
@@ -361,6 +415,8 @@ En el cuadro **Margen (días)** coloque la cantidad de días: 3 (tres) siguiendo
 
 {: .item-step  .mdl-cell--12-col}   
 Luego presione Guardar
+
+- **Base de cálculo Manual**: Al seleccionar esta opción antes de concretar la venta del PLU le será requerido el ingreso manual de la fecha de vencimiento y/o empaque. 
 
 Y por último la solapa Auditoría que muestra información relacionada al registro de datos guardados.
 
@@ -433,9 +489,6 @@ En este campo es posible cargar todas las imágenes que se visualizarán en pant
 {: .alert-message .note}
 El tamaño recomendado para las imágenes es de 400 por 400 píxeles
 
-{: .img-capture}
-![ABM Imágenes](../../../../images/es/cuora-neo/cuora-neo-imagenes1.png "ABM Imágenes")   
-
 {: .item-step  .mdl-cell--12-col}  
 Ingrese al menú presionando la tecla <i class="systel-tecla-1 bg-3"></i>
 
@@ -452,15 +505,15 @@ Elija la opción **Altas y bajas** ubicada en el cuadrante superior derecho de l
 En la pantalla se visualiza el menú completo de este módulo. Presione **Imágenes**
 
 {: .item-step  .mdl-cell--12-col}  
-Para comenzar con la carga de imágenes presione **Nuevo**
-
-{: .img-capture}
-![ABM Imágenes Nuevo](../../../../images/es/cuora-neo/cuora-neo-imagenes2.png "ABM Imágenes Nuevo")   
+Para comenzar con la carga de imágenes presione **Nuevo**  
 
 Después de ejecutar esta acción podrá empezar a completar los ítems detallados en la primera solapa **Datos**.
 
 {: .item-step  .mdl-cell--12-col}  
 Primero presione el campo **Nombre** para activar el espacio de escritura, luego la tecla <span class="systel-tecla-11"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span></span> para visualizar el teclado alfanumérico y digite el término que identifica la imagen a subir.
+
+{: .img-capture}
+![ABM Imágenes](../../../../images/es/cuora-neo/cuora-neo-imagenes1.png "ABM Imágenes") 
 
 {: .item-step  .mdl-cell--12-col}  
 La palabra **Activo** aparece tildada por defecto. Seleccione además la opción que se vincula con la imagen a cargar:   
@@ -471,6 +524,9 @@ La palabra **Activo** aparece tildada por defecto. Seleccione además la opción
 
 {: .item-step  .mdl-cell--12-col}  
 Presione el cuadro en blanco siguiente para cargar o modificar la imagen.
+
+{: .img-capture}
+![ABM Imágenes Nuevo](../../../../images/es/cuora-neo/cuora-neo-imagenes2.png "ABM Imágenes Nuevo") 
 
 {: .item-step  .mdl-cell--12-col}  
 Luego de esta acción se visualiza la siguiente pantalla 
@@ -486,6 +542,29 @@ En el campo **Nombre de archivo** coloque el término que identifica la imagen. 
 
 {: .item-step  .mdl-cell--12-col}  
 Presione **Abrir**
+
+##### Imágenes - Carga masiva
+
+Brinda al usuario la funcionalidad de realizar carga masiva de imagenes a partir de la selección de la carpeta contenedora en medio extraible.
+
+{: .img-capture}
+![ABM Imágenes Carga masiva](../../../../images/es/cuora-neo/cuora-neo-imagenes3a.png "ABM Imágenes Carga Masiva")  
+
+{: .item-step  .mdl-cell--12-col}  
+Presione **Carga Masiva**
+
+{: .item-step  .mdl-cell--12-col}  
+Indique tipo de imágenes que cargará
+
+{: .item-step  .mdl-cell--12-col}  
+Presione Seleccionar carpeta
+
+{: .item-step  .mdl-cell--12-col}  
+Indique la ruta de la carpeta y confirme con Abrir 
+
+{: .item-step  .mdl-cell--12-col}  
+Finalice con **GUARDAR** 
+
 
 ##### Publicidades  
 
@@ -1098,3 +1177,55 @@ Para localizar los registros ya creados elija la opción Buscar (ubicado en la b
 {: .item-step  .mdl-cell--12-col}
 En la solapa **Auditoría** se visualiza información relacionada al registro de datos guardados.
 
+##### IVA
+
+{: .img-capture}
+![IVA](../../../../images/es/cuora-neo/cuora-neo-iva1.png "IVA") 
+
+{: .mdl-cell-nospacing .mdl-cell--12-col}
+Permite crear, modificar y/o borrar impuestos IVA a los que luego se podrá vincular a los artículos (PLUs)
+
+{: .item-step  .mdl-cell--12-col}  
+Ingrese al menú presionando la tecla <i class="systel-tecla-1 bg-3"></i>
+
+{: .item-step  .mdl-cell--12-col}  
+Seleccione usuario y digite la contraseña correspondiente. 
+
+{: .item-step  .mdl-cell--12-col}  
+Presione Aceptar
+
+{: .item-step  .mdl-cell--12-col}  
+Elija la opción **Altas y bajas** ubicada en el cuadrante superior derecho de la pantalla
+
+{: .item-step  .mdl-cell--12-col}  
+En la pantalla se visualiza el menú completo de este módulo. Presione **Iva**
+
+{: .img-capture}
+![ABM IVA](../../../../images/es/cuora-neo/cuora-neo-iva2.png "ABM IVA")  
+
+{: .item-step  .mdl-cell--12-col}  
+Para comenzar con la creación de un Iva presione **Nuevo**.
+
+{: .img-capture}
+![ABM IVA nuevo](../../../../images/es/cuora-neo/cuora-neo-iva3.png "ABM IVA nuevo")   
+
+{: .item-step  .mdl-cell--12-col}  
+Una vez ubicado en la pantalla de **Datos** encontrará el primer campo denominado **Nombre**. Aquí puede colocar el nombre asociado al IVA a crear activando el espacio de escritura.
+
+{: .item-step  .mdl-cell--12-col}  
+En el campo denominado **Descripción** indique la descripción del IVA
+
+{: .item-step  .mdl-cell--12-col}  
+En el campo denominado **IVA** ingrese el valor del IVA
+
+{: .item-step  .mdl-cell--12-col}  
+La palabra **Activo** aparece tildada por defecto. Cuando desee deshabilitar un IVA destilde esta acción.
+
+{: .item-step  .mdl-cell--12-col}  
+Para ubicar IVAs ya creados presione Buscar (ubicado en la barra superior) y seleccione el que necesite.
+
+{: .item-step  .mdl-cell--12-col}  
+Presione Guardar.
+
+{: .item-step  .mdl-cell--12-col}  
+En la solapa **Auditoría** se visualiza información relacionada al registro de datos guardados

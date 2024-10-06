@@ -115,7 +115,7 @@ Coloque el número deseado a través del teclado numérico de la balanza.
 #### Icono +  
 
 {: .mdl-cell-nospacing .mdl-cell--12-col}
-Le permite acceder a los registros ya existentes para realizar alguna modificación:
+Le permite acceder a los registros ya existentes para realizar alguna modificación o dar de alta un nuevo registro:
 
 {: .item-step  .mdl-cell--12-col} 
 Presione el ícono +

@@ -12,7 +12,7 @@ name: page-8
 {% include image.html url="cuora-neo-cambio-papel-1.jpg" description="" class="" sizes="max-width:500px"%}
 
 {: .mdl-cell .mdl-cell--12-col}
-#####Instructions
+##### Instructions
 
 {: .mdl-cell .mdl-cell--12-col}
 **A.** Put in a new LABEL roll:

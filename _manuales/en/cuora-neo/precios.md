@@ -38,14 +38,14 @@ As the price was set manually and the equipment does not know which article it c
 
 When creating a PLU, among the setting actions you will find the product's price assignment. You will find the necessary steps to execute this operation at: [Menu - CRUD's - PLU](../altas-bajas-modificaciones/index.html#precios "Menu - CRUD's - PLU")
 
-##### The price can be modified from the price list.
+##### The price can be modified from the Price Assistant
 
 Press the menu key <i class="systel-tecla-1 bg-3"></i>, select a user and enter the password, and then the option **Price Assistant**
 
 {: .img-capture}
 ![Pre-existent Price List](../../../../images/en/cuora-neo/cuora-neo-lista0.png "Pre-existent Price' List") 
 
-From this point on it is possible to modify the prices of a pre-existent price list.
+By indicating an existing price list it is possible to modify the prices of the PLUs.
 
 {: .item-step  .mdl-cell--12-col}
 Select Mass modification of prices. 

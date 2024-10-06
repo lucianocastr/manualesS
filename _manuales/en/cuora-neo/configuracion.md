@@ -32,7 +32,7 @@ We will first start by detailing the function of each tab:
 - **Pages**: Here you will be able to edit the name of the initial pages of direct accesses.
 - **Sales**: It allows you to determine the access clearance to prices modifications, generics' sales, and visualization of the last printed ticket's number.
 - **Scale**: In this item, the scale's number is set (in the case of using multiple equipments at the same time), visualization of the pointer on the screen, standby time of special keys and marquee, scale's mode, among other functions.
-- **Printing**: It allows you to define the amount of copies and to adjust the printer's tone as well as restoring the printing formats. 
+- **Printing**: It allows you to define the number of copies, automatic rewind, compressed mode, wait between labels, rotate printing, print QR (on ticket).
 
 
 Hereunder, you will find the steps to follow to complete the data in every tab.
@@ -116,11 +116,18 @@ In the **Scale** tab you can:
 {: .item-step  .mdl-cell--12-col}
 Enter the number that identifies the equipment in your business using the field **Scale's N.°**. Enter the number with the keyboard or pressing the arrows located in the extremes of the box.
 
-{: .item-step  .mdl-cell--12-col}
-Select the **Marquee's standby** time move the pointer to the right to increase its duration.
+{: .item-step .mdl-cell--12-col}
+You can assign a **Name** to the scale in the corresponding field.
+
+{: .item-step .mdl-cell--12-col}
+The **Number of digits** and **Number of decimals** fields allow you to assign the format to the value of the prices that will be allowed in the assignment to each PLU. It is very important that you configure these fields correctly.
+
+- **Number of digits**: From 6 to 8, represents the total number of digits that make up the price value (integer part + decimal part).
+
+- **Number of decimals**: 0 to 2 represents the number of decimal digits that will be allowed in the price value.
 
 {: .item-step  .mdl-cell--12-col}
-Press the gray box in the line **Protection from Interferences** to activate it. In the next box move the pointer to the right to increase the number, or to the left to reduce it. 
+Select the **Marquee's standby** time move the pointer to the right to increase its duration.
 
 {: .item-step  .mdl-cell--12-col}
 To **Activate VNC** first enter the keyword in the enabled text field for such purpose; and then move the key to the right to activate it. 
@@ -141,13 +148,23 @@ To set the number of tickets to print every time a sale with ticket is executed 
 
 To do this, use the arrows or activate the text field.
 
-{: .item-step  .mdl-cell--12-col}
-To adjust the **Printer tone** slide the cursor to the right. Press <i class="systel-tecla-9"></i> to check the operation has been done.
+{: .item-step .mdl-cell--12-col}
+Activate **Auto Rewind** when printing labels
 
-{: .item-step  .mdl-cell--12-col}
-The last box **Restore the printing setting values ** allows you to delete the modifications made and go back to the original settings.
+{: .item-step .mdl-cell--12-col}
+Activate **Compressed Mode** to reduce the space between lines  
 
-{: .item-step  .mdl-cell--12-col}
+{: .item-step .mdl-cell--12-col}
+In the **Wait between labels** field, indicate the waiting time between one print and another.
+
+{: .item-step .mdl-cell--12-col}
+Allows printing QR code  
+
+{: .item-step .mdl-cell--12-col}
+Allows printing to be rotated
+
+{: .item-step .mdl-cell--12-col}
+Allows you to select the type of QR code
 Press Save.
 
 ##### Networks
@@ -250,9 +267,6 @@ Next, you will see the following screen
 
 {: .item-step  .mdl-cell--12-col}
 Select the PLU that can be found there by pressing on it. 
-
-{: .item-step  .mdl-cell--12-col}
-To finish the search of a PLU, activate first the filter by pressing **Filter on/off** located in the right upper margin.
 
 {: .item-step  .mdl-cell--12-col}
 Then use the fields available for adjusting the search by Department or Group.
@@ -567,21 +581,42 @@ In the 2nd tab **Auditing** the information related to the registry of the saved
 <div class="menu-configuracion-8"></div>
 
 {: .mdl-cell-nospacing .mdl-cell--12-col}
-In each sale's receipt, tickets and labels, an EAN-13 format bar code will be printed. <br> From this access you can modify the bar code's settings, selecting among 3 possible options and determining the field, the position and the number of digits that it requires (12 digits in total).
+On each sales receipt, both ticket and label, a barcode will be printed in the EAN-13 format by default, and from here you can choose the type of barcode you want.<br> From this access you can modify the configuration of the barcode, selecting from several possible options and determining the field, position and number of digits required.
+
+{: .item-step .mdl-cell--12-col}
+Possible barcodes to assign
+- EAN 13
+- UPC A
+- Code 128
+- UPC E
+- EAN 8
+- DUN 14
 
 {: .img-capture}
 ![Settings - Bar Code ](../../../../images/en/cuora-neo/cuora-neo-codbarra1.png "Settings - Bar code")
 
-The scale admits the setting of three different types of bar codes:
+The scale supports configuring six types of barcode settings:
 
-- **SALE BY WEIGTH**: WEIGHABLE item. The following default setting will be printed in the sale's receipt: **2 0 P P P P I I I I I I X**.
- The default value of the heading is the number **20**, which can be used so that the code scanner of the cash machine identifies said item as weighable.
+- 2 configurations in **SALE BY WEIGHT**: WEIGHABLE item    
+  The following factory settings are printed on the sales receipt: **2 0 P P P P I I I I I I I X**.
+  The default value of the header is the number **20**, which can be used for the payment code reader to identify that item as weighable.
 
-- **SALE BY UNIT**: NON-WEIGHABLE item. The default setting is **2 1 P P P P I I I I I I X** and it will be printed in the receipt when selling a non-weighable item.
-The default value of the heading is the number 21, which can be used so that the code scanner of the cash machine identifies said item as non-weighable.
+  1. **Weighable**: Configuration started by default.
+  2. **Weighing exception**: Alternative configuration in case the PLU sold presents any particularity not contemplated in the configuration of the **Weighable** barcode.
 
-- **GENERICS**: The default setting for this condition is: **2 2 A A I I I I I I I I X**. This bar code will be used when two or more items are sold in the same receipt, and thus, it will be possible to include the item's code in the setting of the printed code.
- For the cash machine scanner to differentiate among each setting, it is advisable to use a heading (2 initial digits) of different fixed numbers for each setting.
+- 2 configurations in **SALE PER UNIT**: item per UNIT (not weighable)    
+  The factory-defined setting is **2 1 P P P P I I I I I I X** and will be printed on the receipt when an item is sold individually.
+  The default value of the header is the number **21**, which can be used for the payment code reader to identify that item as non-weighable.
+
+  1. **Unit**: Configuration launched by default.
+  2. **Unit exception**: Alternative configuration in the event that the PLU sold presents some particularity not contemplated in the configuration of the **Unit** barcode.
+
+- 3 configurations **VARIOUS - TICKET SALES**: The factory configuration value for this condition is: **2 2 A A I I I I I I I I I I X**    
+  This barcode will be used when two or more items are sold on the same receipt, so it is impossible to include the item code in the printed code settings.
+  So that the cash register reader can differentiate between each configuration, it is advisable to use a header (2 initial digits) of different fixed numbers for each configuration.
+  
+  1. **Summary**: Configuration started by default.
+  2. **Summation exception**: Alternative configuration in the event that the information on the PLUs sold presents some particularity not contemplated in the configuration of the **Summary** barcode.
 
 Next, we will describe the steps to follow to set the product's bar code.  
 

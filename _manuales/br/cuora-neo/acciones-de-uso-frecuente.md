@@ -117,7 +117,7 @@ Pressione **limpar**. Insira o valor desejado através do teclado numérico da b
 #### SIMBOLO +  
 
 {: .mdl-cell-nospacing .mdl-cell--12-col}
-Permite acessar os registros já existentes para realizar alguma modificação:
+Permite acessar os registros já existentes para realizar alguma modificação ou registrar um novo registro:
 
 {: .item-step  .mdl-cell--12-col} 
 Pressione o simbolo +

@@ -33,7 +33,7 @@ Detalharemos primeiro as funções de cada opção nas abas:
 - **Páginas**: aqui é possível a alteração dos nomes das páginas iniciais dos acessos diretos.
 - **Vendas**: permite determinar permissões de acesso, a alteração de preços, venda de produtos genéricos e visualizar o número do último ticket impresso.
 - **Balança**: Nesta seção é definida o nº da balança (para a situação de vários equipamentos em operação), visualização do ponteiro na tela, tempo de espera das teclas especiais e da propaganda, modo de balança, entre outras funções.
-- **Impressão**: permite definir o número de cópias, retrocesso automático, modo compactado, imprimir QR (no recibo).
+- **Impressão**: permite definir número de cópias, retrocesso automático, modo compactado, espera entre etiquetas, rotação de impressão, impressão de QR (no recibo).
 - **Data e Hora**: permite definir o modo que irá sincronizar a data e hora.
 - **Importar**: permite definir uma conexão com um FTP para importar um arquivo.
 
@@ -119,14 +119,23 @@ Na aba **Balança** é possível:
 {: .item-step  .mdl-cell--12-col}
 Colocar o número que identifica o equipamento (utilizado para conexão de rede) no campo **Nº de Balança**. Insira o número através do teclado ou utilize as setas para selecionar o número desejado.
 
+{: .item-step .mdl-cell--12-col}
+Você pode atribuir um **Nome** à escala no campo correspondente.
+
+{: .item-step .mdl-cell--12-col}
+Os campos **Número de algarismos** e **Número de decimais** permitem atribuir o formato ao valor dos preços que serão permitidos na atribuição a cada PLU. É muito importante que você configure esses campos corretamente.
+
+- **Número de dígitos**: De 6 a 8, representa o número total de dígitos que compõem o valor do preço (parte inteira + parte decimal).
+
+- **Número de casas decimais**: 0 a 2 representa a quantidade de casas decimais que serão permitidas no valor do preço.
+
 {: .item-step  .mdl-cell--12-col}
 Selecione o **Tempo de exposição de publicidade** deslizando o cursor para a direita para incrementar o valor de tempo de exposição.
+
 
 {: .item-step  .mdl-cell--12-col}
 Deslize o cursor na opção **Número de exposições**  para aumentar o número ou para a esquerda para reduzi-lo. 
 
-{: .item-step  .mdl-cell--12-col}
-Pressione o seletor ON-OFF **Tempo de espera para teclas especiais** para ativá-lo. Utilize o cursor da direita para aumentar o número ou o da esquerda para reduzi-lo.
 
 {: .item-step  .mdl-cell--12-col}
 Para **ativar VNC** primeiramente insira a chave no campo de texto habilitado correspondente e em seguida a tecla à direita para ativá-lo. 
@@ -151,7 +160,10 @@ Para isto utilize as setas ou insira através do campo de texto.
 Ativo **Retrocesso Automatico** ao imprimir etiquetas
 
 {: .item-step  .mdl-cell--12-col}
-Ative o  **modo compactado** para reduzir o espaço entre as linhas  
+Ative o  **modo compactado** para reduzir o espaço entre as linhas 
+
+{: .item-step .mdl-cell--12-col}
+No campo **Aguarde entre tags** indique o tempo de espera entre uma impressão e outra.
 
 {: .item-step  .mdl-cell--12-col}
 Permite que a impressão seja girada 
@@ -300,9 +312,6 @@ Será visualizada a seguinte tela
 
 {: .item-step  .mdl-cell--12-col}
 Selecione o produto a ser associado, clicando sobre ele. 
-
-{: .item-step  .mdl-cell--12-col}
-Para realizar a busca de um produto através dos filtros selecione **Filtro on/off** localizado no canto superior direito.
 
 {: .item-step  .mdl-cell--12-col}
 Ajuste a busca através dos campos de setores e/ou Grupo.
@@ -620,24 +629,42 @@ Na aba **Auditoria**  contém as informações relacionadas aos registros dos da
 <div class="menu-configuracion-8"></div>
 
 {: .mdl-cell-nospacing .mdl-cell--12-col}
-Nos comprovantes de venda no modo de ticket ou etiqueta, será impresso um código de barras no formato EAN-13.<br> Através desta opção é possível modificar a configuração do código de barras, selecionando dentre as 3 opções disponíveis, determinando o campo, a posição e a quantidade de dígitos desejado (12 dígitos no total)
+Em cada recibo de venda, tanto no ticket quanto na etiqueta, será impresso um código de barras no formato EAN-13 por padrão, e a partir daqui você poderá escolher o tipo de código de barras que deseja.<br> A partir deste acesso você poderá modificar a configuração do código de barras, selecionando entre diversas opções possíveis e determinando o campo, posição e número de dígitos necessários.
+
+{: .item-step .mdl-cell--12-col}
+Possíveis códigos de barras para atribuir
+- EAN 13
+- UPC A
+- Código 128
+- UPC E
+- EAN 8
+- DUN 14
 
 {: .img-capture}
 ![Configuração - Códigos de barras ](../../../../images/br/cuora-neo/cuora-neo-codbarra1.png "Configuração - Códigos de barras")
 
-A balança dispõe de três opções de código de barras:
+A balança suporta a configuração de seis tipos de configurações de código de barras:
 
-- **VENDA POR PESO**: Produtos vendidos por peso.    
-  Será impresso um comprovante de venda com a seguinte configuração de fábrica: **2 0 P P P P I I I I I I X**.
-  O valor padrão do prefixo é o número **20**, que identifica na sua leitura através do código de barras como um **produto vendido por peso**.
+- 2 configurações em **VENDA POR PESO**: item PESÁVEL    
+  A seguinte configuração de fábrica está impressa no recibo de venda: **2 0 P P P P I I I I I I I X**.
+  O valor padrão do cabeçalho é o número **20**, que pode ser usado para o leitor de código de checkout identificar o referido item como pesável.
+  
+  1. **Pesável**: Configuração iniciada por padrão.
+  2. **Exceção Pesável**: Configuração alternativa caso o PLU vendido apresente alguma particularidade não contemplada na configuração do código de barras **Pesável**.
 
-- **VENDA POR UNIDADE**: Produto vendido por unidade.    
-  A configuração definida de fábrica é **2 1 P P P P I I I I I I X** e será impressa no comprovante no momento da venda de um produto vendido por unidade.
-  O valor padrão do prefixo é o número **21**, que identifica na sua leitura através do código de barras como um **produto vendido por unidade**.
+- 2 configurações em **VENDA POR UNIDADE**: item por UNIDADE (não pesável)    
+  A configuração definida de fábrica é **2 1 P P P P I I I I I I X** e será impressa no recibo quando um item for vendido por unidade.
+  O valor padrão do cabeçalho é o número **21**, que pode ser usado para o leitor de código de checkout identificar o referido item como não pesável.
 
-- **VÁRIOS**: O valor de configuração de fábrica para esta condição é: **2 2 A A I I I I I I I I X**.    
-  Este código de barras é utilizado quando dois ou mais produtos são vendidos no mesmo comprovante (produtos diferentes, que não seria possível a identificação pelo leitor).
-  Para que a leitura do caixa (PDV) possa diferenciar dentre cada configuração, é aconselhável utilizar um prefixo (2 dígitos iniciais) de números fixos diferentes para cada configuração.
+  1. **Unidade**: Configuração iniciada por padrão.
+  2. **Exceção Unidade**: Configuração alternativa caso o PLU vendido apresente alguma particularidade não contemplada na configuração do código de barras **Unidade**.
+
+- 3 configurações **VÁRIAS - VENDA DE INGRESSOS**: O valor de configuração de fábrica para esta condição é: **2 2 A A I I I I I I I I I X**    
+  Este código de barras será utilizado quando dois ou mais itens forem vendidos no mesmo recibo, sendo portanto impossível incluir o código do item na configuração do código impresso.
+  Para que o leitor de caixas possa diferenciar cada configuração, é aconselhável utilizar um cabeçalho (2 dígitos iniciais) de números fixos diferentes para cada configuração.
+
+  1. **Somatório**: Configuração iniciada por padrão.
+  2. **Exceção de somatório**: Configuração alternativa caso a informação dos PLUs comercializados apresente alguma particularidade não contemplada na configuração do código de barras **Somatório**.
 
 
 À seguir exemplificaremos as opções para configurar o código de barra dos produtos.  

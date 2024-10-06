@@ -115,7 +115,7 @@ Press **clean**. Enter the desired number with the scale's numeric keypad.
 #### + icon  
 
 {: .mdl-cell-nospacing .mdl-cell--12-col}
-It allows you to access preexisting registries to make any modification:
+It allows you to access preexisting registries to make any modification or register a new record :
 
 {: .item-step  .mdl-cell--12-col}
 Press the + icon

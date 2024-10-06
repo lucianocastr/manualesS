@@ -33,7 +33,7 @@ Comenzaremos primero detallando la función que cumple cada solapa:
 - **Páginas**: aquí podrá editar el nombre de las páginas iniciales de accesos directos
 - **Ventas**: permite determinar permisos de acceso a cambios de precios, venta de genéricos y visualizar el número del último ticket impreso
 - **Balanza**: en este apartado se establece  el Nº de balanza (para el caso de varios equipos en operación), visualización del puntero en la pantalla, tiempo de espera de las teclas especiales y de la marquesina, modo de la balanza, entre otras funciones
-- **Impresión**: permite definir la cantidad de copias, auto rewind, modo comprimido, imprimir QR (en ticket)
+- **Impresión**: permite definir la cantidad de copias, auto rewind, modo comprimido, espera entre etiquetas, rotar impresión, imprimir QR (en ticket).
 - **Fecha y Hora**: permite definir el modo que sincronizará la fecha y hora
 - **Importación**: permite definir una conexión a un FTP para importar un archivo
 
@@ -119,10 +119,17 @@ En la solapa **Balanza** puede:
 Colocar el número que identifica al equipo dentro de su negocio utilizando el campo **Nº de Balanza**. Ingrese el número a través del teclado o presionando las flechas ubicadas en los extremos del recuadro.
 
 {: .item-step  .mdl-cell--12-col}
-Seleccione el **Tiempo marquesina** desplazando el cursor hacia la derecha para incrementar la duración.
+Puede asignar un **Nombre** a la balanza en el campo correspondiente.
 
 {: .item-step  .mdl-cell--12-col}
-Presione el recuadro gris en la línea **Protección de interferencias** para activarlo. En el recuadro contiguo desplace el cursor a la derecha para aumentar el número o a la izquierda para reducirlo. 
+Los campos **Cantidad de dígitos** y **Cantidad de decimales** permiten asignar el formato al valor de los precios que se permitirán en la asignacion a cada PLU. Es muy importante que configure estos campos de forma correcta.
+
+- Cantidad de dígitos: De 6 a 8, representa la cantidad total de dígitos que conforman el valor de precios (parte entera + parte decimal).
+
+- Cantidad de decimales: de 0 a 2 representa la cantidad de dgitos decimales que permitirá en el valor del precio.
+
+{: .item-step  .mdl-cell--12-col}
+Seleccione el **Tiempo marquesina** desplazando el cursor hacia la derecha para incrementar la duración.
 
 {: .item-step  .mdl-cell--12-col}
 Para **activar VNC** primero ingrese la clave en el campo de texto habilitado para tal fin y luego mueva la tecla hacia la derecha para activarlo. 
@@ -147,6 +154,9 @@ Active **Auto Rewind** cuando imprima etiquetas
 
 {: .item-step  .mdl-cell--12-col}
 Active el **Modo Comprimido** para reducir el espacio entre lineas  
+
+{: .item-step  .mdl-cell--12-col}
+En el campo **Espera entre etiquetas** indique el tiempo de espera entre una y otra impresión.
 
 {: .item-step  .mdl-cell--12-col}
 Permite imprimir codigo QR  
@@ -176,10 +186,6 @@ En el campo **NTP Server Local** puede ingresar la direccion de su servidor de F
 
 {: .img-capture}
 ![Configuración - importacion1](../../../../images/es/cuora-neo/cuora-neo-importacion1.png "Configuración - importacion1")
-
-{: .img-capture}
-![Configuración - importacion1-2](../../../../images/es/cuora-neo/cuora-neo-importacion1-2.png "Configuración - importacion1-2")
-**Importación**  
 
 {: .item-step  .mdl-cell--12-col}
 Active **Importar desde servidor FTP** y complete los campos a continuación 
@@ -302,9 +308,6 @@ Se visualiza la siguiente pantalla
 
 {: .item-step  .mdl-cell--12-col}
 Seleccione el PLU que se localizará allí presionando sobre el mismo 
-
-{: .item-step  .mdl-cell--12-col}
-Para realizar la búsqueda de un PLU active primero los filtros presionado **Filtro on/off** ubicado en el margen superior derecho
 
 {: .item-step  .mdl-cell--12-col}
 Luego utilice los campos dispuestos para ajustar la búsqueda por Departamento y/o Grupo
@@ -619,25 +622,42 @@ En 2da. solapa **Auditoría**  se muestra información relacionada al registro d
 <div class="menu-configuracion-8"></div>
 
 {: .mdl-cell-nospacing .mdl-cell--12-col}
-En cada comprobante de venta, tanto ticket como etiqueta, se imprimirá un código de barras en formato EAN-13.<br> Desde este acceso podrá modificar la configuración del código de barras, seleccionando entre 3 opciones posibles y determinando el campo, la posición y la cantidad de dígitos que requiera (12 dígitos en total)
+En cada comprobante de venta, tanto ticket como etiqueta, se imprimirá un código de barras en el formato EAN-13 por defecto, pudiendo desde aquí elegir el tipo de código de barras que desee.<br> Desde este acceso podrá modificar la configuración del código de barras, seleccionando entre varias opciones posibles y determinando el campo, la posición y la cantidad de dígitos que requiera.
+
+{: .item-step  .mdl-cell--12-col}
+Códigos de barras posibles de asignar
+- EAN 13
+- UPC A
+- Code 128
+- UPC E
+- EAN 8
+- DUN 14
 
 {: .img-capture}
 ![Configuración - Códigos de barras ](../../../../images/es/cuora-neo/cuora-neo-codbarra1.png "Configuración - Códigos de barras")
 
-La balanza admite la configuración de tres clases diferentes de código de barras:
+La balanza admite la configuración de seis tipos de configuraciones de Códigos de barras:
 
-- **VENTA POR PESO**: artículo PESABLE    
+- 2 configuraciones en **VENTA POR PESO**: artículo PESABLE    
   Se imprime en el comprobante de venta la siguiente configuración de fábrica: **2 0 P P P P I I I I I I X**.
   El valor por defecto de la cabecera es el número **20**, el cual puede utilizarse para que el lector de códigos de la caja identifique dicho artículo como pesable.
+  
+  1. **Pesable**: Configuración lanzada por defecto.
+  2. **Pesable excepción**: CConfiguración alternativa para el caso que el PLU vendido presente alguna particularidad no contemplada en la configuración de codigo de barras **Pesable**.
 
-- **VENTA POR UNIDAD**: artículo por UNIDAD (no pesable)    
+- 2 configuraciones en **VENTA POR UNIDAD**: artículo por UNIDAD (no  pesable)    
   La configuración definida de fábrica es **2 1 P P P P I I I I I I X** y se imprimirá en el comprobante al momento de vender un artículo por unidad.
   El valor por defecto de la cabecera es el número **21**, el cual puede utilizarse para que el lector de códigos de la caja identifique dicho artículo como no pesable.
 
-- **VARIOS**: El valor de configuración de fábrica para esta condición es: **2 2 A A I I I I I I I I X**    
+  1. **Unitario**: Configuración lanzada por defecto.
+  2. **Unitario excepción**: Configuración alternativa para el caso que el PLU vendido presente alguna particularidad no contemplada en la configuración de codigo de barras **Unitario**.
+
+- 3 condiguraciones **VARIOS - VENTA TICKET**: El valor de configuración de fábrica para esta condición es: **2 2 A A I I I I I I I I X**    
   Este código de barras se utilizará cuando dos o más artículos se vendan en un mismo comprobante, y sea por lo tanto imposible incluir el código de artículo en la configuración del código impreso.
   Para que el lector de la caja pueda diferenciar entre cada configuración, se aconseja utilizar una cabecera (2 dígitos iniciales) de números fijos diferentes para cada configuración.
 
+  1. **Sumatoria**: Configuración lanzada por defecto.
+  2. **Sumatoria excepción**: Configuración alternativa para el caso que la información de los PLUs vendidos presenten alguna particularidad no contemplada en la configuración de codigo de barras **Sumatoria**.
 
 A continuación describiremos los pasos a seguir para configurar el código de barra de los productos.  
 

@@ -37,14 +37,15 @@ Como el precio se fijó de manera manual y el equipo no sabe a qué artículo pe
 Al momento de crear un PLU, dentro de las acciones de configuración encontrará la asignación del valor del producto.
 Los pasos necesarios para llevar adelante esta operación los encontrará en: [Menú - ABM’s - PLU](../altas-bajas-modificaciones/index.html#precios "Menú - ABM - PLU")
 
-##### El precio se puede modificar desde la lista de precios
+##### El precio se puede modificar desde el Asistente de precios
+
 
 Presione la tecla menú <i class="systel-tecla-1 bg-3"></i>, seleccione un usuario e ingrese la contraseña, y luego la opción **Asistente Precios**
 
 {: .img-capture}
 ![Lista de precios ya existente](../../../../images/es/cuora-neo/cuora-neo-lista0.png "Lista de precios ya existente")
 
-Desde este punto es posible modificar los valores de una lista de precios ya existente.
+Indicando una lista de precios ya existente es posible modificar los precios de los PLUs.
 
 {: .item-step  .mdl-cell--12-col}  
 Seleccione Modificación masiva de Precios

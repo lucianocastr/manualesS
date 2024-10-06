@@ -105,10 +105,13 @@ Repetir la operación tantas veces como sea necesario.
 Seleccione el artículo.
 
 {: .item-step  .mdl-cell--12-col} 
-Automáticamente se emitirá la etiqueta.
+Presione la tecla <i class="systel-tecla-30 bg-2"></i>
+
+{: .img-capture}
+![Venta Pre empaque PLU unitario](../../../../images/es/cuora-neo/cuora-neo-ventaetiqueta1a.png "Venta Pre empaque PLU unitario")
 
 {: .item-step  .mdl-cell--12-col} 
-Para imprimir más etiquetas presione la tecla <i class="systel-tecla-30 bg-2"></i> las veces que sean necesarias o elija un nuevo artículo.
+Debe indicar la cantidad de etiquetas que desea imprimir (Máximo 10). Luego presione la tecla <i class="systel-tecla-30 bg-2"></i>
 
 {: .alert-message .note}
 RECUERDE: El modo **pre-empaque** sólo se encuentra disponible en la impresión de etiquetas.

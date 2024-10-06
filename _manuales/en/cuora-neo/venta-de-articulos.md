@@ -105,11 +105,15 @@ Repeat the action as many times as necessary.
 Select the product.
 
 {: .item-step  .mdl-cell--12-col}
-The label will be automatically printed.
+Press the key<i class="systel-tecla-30 bg-2"></i> 
 
-{: .item-step  .mdl-cell--12-col}
-To print more labels press the key <i class= "systel-tecla-30 bg-2"></i> as many times as necessary or choose a new product.
+{:.img-capture}
+![Unit PLU Prepackaging Sale](../../../../images/es/cuora-2/cuora-neo-ventaetiqueta2.png "Unit PLU Prepackaging Sale")
 
+
+
+{: .item-step .mdl-cell--12-col} 
+You must indicate the number of labels you want to print (Maximum 10). Then press the key <i class="systel-tecla-30 bg-2"></i> 
 {: .alert-message .note}
 REMEMBER: The **pre-packed mode** is only available for the printing of labels.
 

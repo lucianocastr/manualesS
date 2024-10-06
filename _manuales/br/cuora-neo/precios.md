@@ -36,7 +36,7 @@ Como o preço foi digitado manualmente, o equipamento não o associa à um produ
 No momento do cadastro do produto, dentro das ações de configuração encontra-se a associação do valor do preço ao produto.
 Os procedimentos para executar esta operação é encontrado em: [Programação Geral - Cadastros - Produtos](../altas-bajas-modificaciones/index.html#precios "Programação - Cadastros - Produtos")
 
-##### O valor do preço pode ser modificado através da lista de preços
+##### O valor do preço pode ser modificado através da Assistente de Preços
 
 
 Pressione a tecla menu <i class="systel-tecla-1 bg-3"></i>, selecione o usuario e digite a senha, e clique na  opção **Assistente de Preços**
@@ -44,7 +44,7 @@ Pressione a tecla menu <i class="systel-tecla-1 bg-3"></i>, selecione o usuario 
 {: .img-capture}
 ![Lista de preços já existente](../../../../images/br/cuora-neo/cuora-neo-lista0.png "Lista de preços já existente")
 
-Neste função é possível a modificação dos valores de uma lista de preços previamente cadastrada.
+Ao indicar uma tabela de preços existente, é possível modificar os preços dos PLUs.
 
 {: .item-step  .mdl-cell--12-col}  
 Selecione Modificação massiva de Preços

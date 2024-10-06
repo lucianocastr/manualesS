@@ -188,6 +188,13 @@ In the field, **Advertisement** can execute the following actions according to y
 IMPORTANT: At [Menu - CRUD's - subsection Advertisement](../altas-bajas-modificaciones/index.html#publicidades "Menu - CRUD's - subsection Advertisement") you will find the steps to follow to create, edit, or delete an advertisement message in the scale.
 
 {: .item-step  .mdl-cell--12-col}
+In the **VAT** field you can execute the following actions according to your needs:      
+- pressing the **magnifying glass** the search menu appears    
+- In the box on the right you will see the details of the percentage rates created previously or you can expand the search by keyword.    
+- The **symbol +** allows access to existing rates to make any modification    
+- The **X symbol** allows you to remove the selected rate from the screen to perform the action again
+
+{: .item-step  .mdl-cell--12-col}
 To enter a lot number to the PLU, press the corresponding field to enable it. You can use the equipment's numeric keypad or activate the alphanumeric one by pressing the key <span class="systel-tecla-11"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span></span>
 
 {: .img-capture}
@@ -201,8 +208,47 @@ If it is necessary, in the field **Tare** you can enter the product's container'
 {: .item-step  .mdl-cell--12-col}
 If the PLU to create corresponds to a Frozen product, you will also see the field, **Water percentage**. Follow the detailed steps in the previous item to fill it out.
 
-{: .alert-message .note}
-Not available in Argentina
+{: .item-step .mdl-cell--12-col} 
+The **Discount** field allows you to assign different prices according to ranges of quantities sold of the product, both for weighable and unitary PLUs. To access this functionality it is necessary to have previously saved the basic data.
+
+{: .item-step .mdl-cell--12-col} 
+Press *++** to configure.
+
+{:.img-capture}
+![PLU Discounts](../../../../images/en/cuora-neo/cuora-neo-descuentos1.png "PLU Discounts")
+
+{: .item-step .mdl-cell--12-col} 
+Select **NEW** to create a new price rule based on the quantity sold.
+
+{:.img-capture}
+![New Discount](../../../../images/en/cuora-neo/cuora-neo-descuentos2.png "New Discount")
+
+{: .item-step .mdl-cell--12-col} 
+Select **Active** to avail the discount
+
+{:.img-capture}
+![Configuration discount](../../../../images/en/cuora-neo/cuora-neo-descuentos3.png "Configuration discount")
+
+{: .item-step .mdl-cell--12-col} 
+In the **Up to** field, indicate the weight (for weighable PLU) or quantity (for unitary PLU) maximum limit that the discount price will apply.
+
+{: .item-step .mdl-cell--12-col} 
+In the **Price** field, indicate the price that must be assigned to the PLU when the sale meets what was determined in the until field.
+
+{: .item-step .mdl-cell--12-col} 
+Press **SAVE** to finish creating the discount.
+
+{: .item-step .mdl-cell--12-col} 
+Repeat as many times as required.
+
+{: .item-step .mdl-cell--12-col} 
+When you exit, you will see the discounts created
+
+{:.img-capture}
+![Discounts](../../../../images/en/cuora-neo/cuora-neo-descuentos4.png "Discounts")
+
+{: .item-step .mdl-cell--12-col} 
+To delete discounts press **X** in the discounts field
 
 {: .item-step  .mdl-cell--12-col}
 Press Save 
@@ -278,6 +324,8 @@ Inside the line of Printing Formats, you will find two possibilities: Direct sal
 {: .img-capture}
 ![PLU Printing Formats](../../../../images/en/cuora-neo/cuora-neo-abm-plu13.png "PLU Printing Formats")   
 
+- **Direct Selling:** Allows you to assign a specific print format to the PLU when making direct sales.
+- **Pre-packed:** Allows you to assign a specific print format to the PLU when making prepackage sales.
     
 - by pressing the **magnifying glass** the search menu is shown. In the right box you will see the sale modes already generated. Choose the one that corresponds to the PLU about to be created and then press select. Remember that you can expand the search using the option search by keyword.
 - The **X symbol** allows you to delete the selected printing format from the screen.
@@ -309,6 +357,9 @@ We continue with the fourth tab **Bar Code**.
 
 {: .item-step  .mdl-cell--12-col}
 To activate and deactivate the available functions in this module of the menu you must press on the boxes colored in gray. When you do it the box disappears, and you will see a check mark.
+
+- Select the Replace PLU with number option to assign a different value to the PLU number in the barcode formation.
+- Select UPC / Fixed Barcode and enter a value that will be assigned as the PLU's fixed barcode.
 
 {: .item-step  .mdl-cell--12-col}
 In the line **Replace PLU by the number** you can use the arrows located in the box's extremes or enter the number using the numeric keypad. 
@@ -357,6 +408,8 @@ In the box **Margin (Days)** enter the amount of days: 3 (three) following the s
 
 {: .item-step  .mdl-cell--12-col}
 Then press Save
+
+- **Manual calculation basis**: When selecting this option, before finalizing the sale of the PLU, it will be necessary to manually enter the expiration date and/or packaging.
 
 And finally, the Auditing tab that shows information related to the registry of the saved data.
 
@@ -428,9 +481,6 @@ In this field, it is possible to upload all the images that will be shown on the
 {: .alert-message .note}
 The advised size for the images is 400 by 400 pixels.
 
-{: .img-capture}
-![CRUD's Images](../../../../images/en/cuora-neo/cuora-neo-imagenes1.png "CRUD's Images")  
-
 {: .item-step  .mdl-cell--12-col}
 Enter the menu by pressing the key <i class="systel-tecla-1 bg-3"></i>
 
@@ -449,13 +499,13 @@ You will see the complete module's MENU on the screen. Press **Images**
 {: .item-step  .mdl-cell--12-col}
 To start with the upload of the images, press **New**.
 
-{: .img-capture}
-![CRUD's Images New](../../../../images/en/cuora-neo/cuora-neo-imagenes2.png "CRUD's Images New")   
-
 After doing this, you will be able to start filling out the detailed items in the first tab, **Data**.
 
 {: .item-step  .mdl-cell--12-col}
 First, press the field **Name** to activate the writing space, then the key <span class="systel-tecla-11"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span  class="path12"></span><span class="path13"></span></span> to see the alphanumeric keypad and enter the term that identifies the image for uploading.
+
+{: .img-capture}
+![CRUD's Images](../../../../images/en/cuora-neo/cuora-neo-imagenes1.png "CRUD's Images")  
 
 {: .item-step  .mdl-cell--12-col}
 The word **Active** has a check mark by default. Also select the option link to the image for uploading:   
@@ -466,6 +516,9 @@ The word **Active** has a check mark by default. Also select the option link to 
 
 {: .item-step  .mdl-cell--12-col}
 Press the next blank box to upload or modify the image.
+
+{: .img-capture}
+![CRUD's Images New](../../../../images/en/cuora-neo/cuora-neo-imagenes2.png "CRUD's Images New")  
 
 {: .item-step  .mdl-cell--12-col}
 After this action you will see the following screen 
@@ -481,6 +534,28 @@ In the field **File's Name** enter the term that identifies the image. To do it 
 
 {: .item-step  .mdl-cell--12-col}
 Press **Open**
+
+##### Images - Bulk Upload
+
+Provides the user with the functionality to bulk upload images by selecting the folder containing them on removable media.
+
+{:.img-capture}
+![Massive upload of ABM images](../../../../images/en/cuora-neo/cuora-neo-imagenes3a.png "Massive upload of ABM images")  
+
+{: .item-step .mdl-cell--12-col}  
+Press **Bulk Upload**
+
+{: .item-step .mdl-cell--12-col}  
+Indicate the type of images you will send
+
+{: .item-step .mdl-cell--12-col}  
+Press Select Folder
+
+{: .item-step .mdl-cell--12-col}  
+Enter the folder path and confirm with Open 
+
+{: .item-step .mdl-cell--12-col}  
+End with **SAVE**
 
 ##### Advertisement  
 
@@ -1095,3 +1170,56 @@ To locate the already created registries choose the option Search (located in th
 
 {: .item-step  .mdl-cell--12-col}
 In the tab **Auditing**: the information related to the registry of the saved data is shown.
+
+##### VAT
+
+{:.img-capture}
+![VAT](../../../../images/en/cuora-neo/cuora-neo-iva1.png "VAT") 
+
+{: .mdl-cell-nospacing .mdl-cell--12-col}
+Allows you to create, modify and/or delete VAT taxes that can then be linked to the articles (PLUs)
+
+{: .item-step .mdl-cell--12-col}  
+Enter the menu by pressing the <i class="systel-key-1 bg-3"></i> key
+
+{: .item-step .mdl-cell--12-col}  
+Select user and enter the corresponding password. 
+
+{: .item-step .mdl-cell--12-col}  
+Press OK
+
+{: .item-step .mdl-cell--12-col}  
+Choose the **Highs and Lows** option located in the upper right quadrant of the screen
+
+{: .item-step .mdl-cell--12-col}  
+The complete menu of this module is displayed on the screen. Press **VAT**
+
+{:.img-capture}
+![ABM IVA](../../../../images/en/cuora-neo/cuora-neo-iva2.png "ABM IVA")  
+
+{: .item-step .mdl-cell--12-col}  
+To begin creating a VAT press **New**.
+
+{:.img-capture}
+![ABM IVA new](../../../../images/en/cuora-neo/cuora-neo-iva3.png "ABM IVA new")
+
+{: .item-step .mdl-cell--12-col}  
+Once located on the **Data** screen you will find the first field called **Name**. Here you can enter the name associated with the VAT to be created by activating the writing space.
+
+{: .item-step .mdl-cell--12-col}  
+In the field called **Description**, indicate the description of the VAT
+
+{: .item-step .mdl-cell--12-col}  
+In the field called **VAT** enter the VAT value
+
+{: .item-step .mdl-cell--12-col}  
+The word **Active** appears checked by default. When you want to disable a VAT, uncheck this action.
+
+{: .item-step .mdl-cell--12-col}  
+To locate VATs already created, press Search (located in the top bar) and select the one you need.
+
+{: .item-step .mdl-cell--12-col}  
+Press Save.
+
+{: .item-step .mdl-cell--12-col}  
+Information related to the saved data record is displayed on the **Audit** tab.
